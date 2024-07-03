@@ -34,7 +34,8 @@ class View(ft.UserControl):
         self._page.controls.append(row1)
 
         #ROW2
-        self._ddAlbum = ft.Dropdown(label="Album", on_change=self._controller.getSelectedAlbum)
+        self._ddAlbum = ft.Dropdown(label="Album")
+        # on_change per quando viene cambiato l'elemento del dd
         self._btnAnalisiComp = ft.ElevatedButton(text = "Analisi Componente.",
                                                  on_click=self._controller.handleAnalisiComp)
 
